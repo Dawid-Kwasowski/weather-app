@@ -17,6 +17,14 @@ const WeatherApp = () => {
       })
    }
 
+   const getForecast = () => {
+      const form = document.querySelector('.form-group')
+      form.addEventListener('submit', e => {
+         e.preventDefault()
+         alert('GOT IT')
+      })
+   }
+   getForecast()
    getCurrentDate()
 }
 
