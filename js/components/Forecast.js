@@ -26,7 +26,7 @@ const displayForecast = (data = {}) => {
 
    forecastContainer.innerHTML = `
       <div class="forecast__weather">
-         <img class="forecast__icon" src="../assets/animated/${icon}.svg" />
+         <img class="forecast__icon" src="./assets/animated/${icon}.svg" />
          <span class="forecast__temperature">
             ${Math.floor(temp)} &#176
          </span>
@@ -48,6 +48,7 @@ const getForecast = () => {
    form.addEventListener('submit', e => {
       e.preventDefault()
       const apiCall = `https://api.openweathermap.org/data/2.5/weather?q=${citySearch.value}&appid=8b48a6bae4902b0c459a89225cd3615a&units=metric`
+      citySearch.value = ""
       fetch(apiCall)
       .then(response => response.json())
       .then(cityData => {
