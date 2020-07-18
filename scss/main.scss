@@ -1,0 +1,30 @@
+@import 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import 'components';
+
+html {
+   font-size: map-get($map: $font, $key: "size");
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.app {
+   font-family: map-get($map: $font, $key: "family");
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   padding: 5%;
+   flex-direction: column;
+   @media (min-width: $mobile-320) {
+      background-image: url('../assets/bg.jpg');
+      background-position: center;
+      background-size: cover;
+   }
+}
+
