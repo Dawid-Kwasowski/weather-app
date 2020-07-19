@@ -2,6 +2,10 @@ $mobile-320: 320px;
 $mobile-375: 375px;
 $mobile-1024: 1024px;
 
+$laptop-1280: 1280px;
+$laptop-1366: 1366px;
+$desktop-1920: 1920px;
+
 //Map of font 
 $font: (
    "family": 'Montserrat',
@@ -25,4 +29,3 @@ $Bud-Green: #6da34d;
    align-items: $align;
    flex-direction: $direction;
 }
-

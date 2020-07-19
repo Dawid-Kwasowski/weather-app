@@ -4,8 +4,8 @@
    padding: 10px;
    height: 40px;
    width: 100%;
-   transform: translateY(-150px);
    @media (min-width: $mobile-1024) {
+      transform: translateY(-150px);
       width: 80%;
    }
    &__search {

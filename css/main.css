@@ -98,12 +98,12 @@
   padding: 10px;
   height: 40px;
   width: 100%;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
 }
 
 @media (min-width: 1024px) {
   .form-group {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
     width: 80%;
   }
 }

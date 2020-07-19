@@ -8,6 +8,7 @@
    @media (min-width: $mobile-1024) {
       width: 80%;
    }
+
    &__weather {
       @include flex(space-evenly,center,column);
       height: 100%;
