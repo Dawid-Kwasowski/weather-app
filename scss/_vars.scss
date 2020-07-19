@@ -17,3 +17,12 @@ $Blanced-Almond: #ffecd1;
 $Medium-Slate-Blue: #6665dd;
 $Amber: #ff7d00;
 $Bud-Green: #6da34d;
+
+
+@mixin flex($justify: flex-start, $align: stretch, $direction: row) {
+   display: flex;
+   justify-content: $justify;
+   align-items: $align;
+   flex-direction: $direction;
+}
+

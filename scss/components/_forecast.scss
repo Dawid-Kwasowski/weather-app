@@ -1,0 +1,38 @@
+.forecast {
+   @include flex($align: center);
+   background: $Blanced-Almond;
+   width: 100%;
+   height: 125px;
+   padding: 5px;
+   border-left: 5px solid $Bud-Green;
+   @media (min-width: $mobile-1024) {
+      width: 80%;
+   }
+   &__weather {
+      @include flex(space-evenly,center,column);
+      height: 100%;
+      padding: 5px 10px;
+      border-right: 1px solid hsla(0, 0%, 20%, 0.377);
+   }
+
+   &__temperature {
+      font-size: 1rem;
+   }
+
+   &__description {
+      font-size: .8rem;
+   }
+
+   &__icon {
+      transform: scale(1.5);
+   }
+}
+
+.sun {
+   @include flex(space-evenly,center,column);
+   width: 100%;
+   &__pos {
+      margin: 8px;
+      border-bottom: 1px solid $Medium-Slate-Blue;
+   }
+}
