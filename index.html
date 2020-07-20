@@ -10,34 +10,35 @@
 </head>
 <body>
    <div class="app">
-      
-      <div class="part-of-day">
-         <div class="date">
-            <span class="date__time"></span>
-            <span class="date__date"></span>
-         </div>
-
-         <div class="localization">
-            <span class="localization__city"></span>
-            <span class="localization__country"></span>
-         </div>
-      </div>
-
       <form class="form-group">
          <input 
             type="text"
             required class="form-group__search"
             placeholder="City name or postcode"
-            id="city">
-
+            id="city" 
+         />
          <button 
             type="submit" 
             class="form-group__hand-glass">
-
             <i class="fa fa-search" aria-hidden="true"></i>
          </button>
       </form>
-      <div class="forecast">
+
+      <div class="forecast-wrapper">
+         <div class="part-of-day">
+            <div class="date">
+               <span class="date__time"></span>
+               <span class="date__date"></span>
+            </div>
+   
+            <div class="localization">
+               <span class="localization__city"></span>
+               <span class="localization__country"></span>
+            </div>
+         </div>
+
+         <div class="forecast"></div>
+         
       </div>
    </div>
    <script src="js/main.js" type="module"></script>

@@ -22,7 +22,7 @@ html {
    background-position: center;
    background-size: cover;
 
-   @include flex(space-between,center,column);
+   @include flex(flex-start,center,column);
    
    @media (min-width:$mobile-1024) {
       background-image: url('../assets/big-img.jpg');

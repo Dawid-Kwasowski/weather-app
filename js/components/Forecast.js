@@ -35,8 +35,8 @@ const displayForecast = (data = {}) => {
          </span>
       </div>
       <div class="sun">
-         <span class="sun__pos">Sunrise: ${convertedSunrise}</span>
-         <span class="sun__pos">Sunset: ${convertedSunset}</span>
+         <span class="sun__pos"> - Sunrise: ${convertedSunrise}</span>
+         <span class="sun__pos"> - Sunset: ${convertedSunset}</span>
       </div>
    `
 }

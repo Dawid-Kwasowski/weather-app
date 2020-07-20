@@ -14,10 +14,12 @@
    }
 }
 .part-of-day {
+   border-radius: 5px 5px 0 0;
    @include flex(space-between,center);
    @media (min-width: $mobile-1024) {
       width: 80%;
    }
+   order: 2;
    padding: 0 5%;
    background: $Blanced-Almond;
    width: 100%;
