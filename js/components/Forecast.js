@@ -1,4 +1,4 @@
-import {unixTimeForHuman} from './DateTime.js'
+import {unixTimeForHuman, Timezone} from './DateTime.js'
 
 const displayForecast = (data = {}) => {
    // Destructive api call
@@ -52,7 +52,10 @@ const getForecast = () => {
       fetch(apiCall)
       .then(response => response.json())
       .then(cityData => {
-         return displayForecast(cityData)
+         return {
+            forecast: displayForecast(cityData),
+            timezone: Timezone(cityData)
+         }
       })
    })
 }

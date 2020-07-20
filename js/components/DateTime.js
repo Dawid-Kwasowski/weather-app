@@ -7,6 +7,12 @@ const getCurrentDate = () => {
    })
 }
 
+const Timezone = (data) => {
+   const {timezone} = data
+   const timeHolder = document.querySelector('.date__time')
+   timeHolder.textContent = unixTimeForHuman(timezone)
+}
+
 const unixTimeForHuman = (...Unixtimes) => {
    return [...Unixtimes].map(time => {
       const miliseconds = time * 1000
@@ -25,4 +31,4 @@ const getCurrentTime = () => {
    })
 }
 
-export {getCurrentDate, getCurrentTime,unixTimeForHuman}
+export {getCurrentDate, getCurrentTime,unixTimeForHuman,Timezone}

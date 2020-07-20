@@ -5,5 +5,5 @@ addEventListener('DOMContentLoaded', () => {
    Position()
    getForecast()
    getCurrentDate()
-   setInterval(getCurrentTime,1000)
+   getCurrentTime()
 })
