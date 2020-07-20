@@ -1,5 +1,4 @@
 .form-group {
-   display: flex;
    position: relative;
    padding: 10px;
    height: 40px;
@@ -19,8 +18,6 @@
          color: $Bud-Green;
       }
    }
-
-
    &__hand-glass {
       width: 30px;
       height: 30px;

@@ -7,5 +7,3 @@ addEventListener('DOMContentLoaded', () => {
    getCurrentDate()
    setInterval(getCurrentTime,1000)
 })
-   
-   

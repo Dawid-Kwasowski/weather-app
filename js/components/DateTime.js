@@ -10,7 +10,6 @@ const getCurrentDate = () => {
 const unixTimeForHuman = (...Unixtimes) => {
    return [...Unixtimes].map(time => {
       const miliseconds = time * 1000
-      console.log(time)
       return new Date(miliseconds).toLocaleTimeString([],{
          hour: '2-digit',
          minute: '2-digit'

@@ -91,9 +91,6 @@
 }
 
 .form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   padding: 10px;
   height: 40px;
